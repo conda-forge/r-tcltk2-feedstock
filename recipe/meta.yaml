@@ -17,7 +17,7 @@ source:
 
 build:
   noarch: generic
-  number: 1000
+  number: 1001
 
   rpaths:
     - lib/R/lib/
@@ -43,6 +43,7 @@ about:
   license_family: LGPL
 extra:
    recipe-maintainers:
+    - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
