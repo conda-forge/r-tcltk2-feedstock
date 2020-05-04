@@ -1,4 +1,4 @@
-{% set version = '1.2-11' %}
+{% set version = "1.2-11" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -17,7 +17,7 @@ source:
 
 build:
   noarch: generic
-  number: 1001
+  number: 1002
 
   rpaths:
     - lib/R/lib/
@@ -37,12 +37,14 @@ test:
 
 about:
   home: https://cran.r-project.org/web/packages/tcltk2/index.html
-  license: LGPL-3
-  summary: A series of additional Tcl commands and Tk widgets with style and various functions
-    (under Windows
+  license: LGPL-3.0-only
+  summary: A series of additional Tcl commands and Tk widgets with style and various functions (under Windows
   license_family: LGPL
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
+    - LICENSE
 extra:
-   recipe-maintainers:
+  recipe-maintainers:
     - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
