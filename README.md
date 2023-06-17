@@ -1,11 +1,11 @@
-About r-tcltk2
-==============
+About r-tcltk2-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tcltk2-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.sciviews.org/SciViews-R
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tcltk2-feedstock/blob/main/LICENSE.txt)
 
 Summary: A series of additional Tcl commands and Tk widgets with style and various functions (under Windows: DDE exchange, access to the registry and icon manipulation) to supplement the tcltk package
 
