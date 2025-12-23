@@ -1,4 +1,4 @@
-{% set version = '1.2-11' %}
+{% set version = "1.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tcltk2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tcltk2/tcltk2_{{ version }}.tar.gz
-  sha256: ad183ae3b7190501504a0589e0b3be480f04267303e3384fef00987446a37dc5
+  sha256: dc1cc00ce973df1ce98b830aa70998e455119d89961ce9a368e8a688e6845c6a
 
 build:
-  number: 1007
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -35,13 +35,11 @@ test:
 about:
   home: http://www.sciviews.org/SciViews-R
   license: LGPL-3.0-only
-  summary: 'A series of additional Tcl commands and Tk widgets with style and various functions
-    (under Windows: DDE exchange, access to the registry and icon manipulation) to supplement
-    the tcltk package'
+  summary: 'A series of additional Tcl commands and Tk widgets with style and various functions (under Windows: DDE exchange, access to the registry and icon manipulation) to supplement the tcltk package'
   license_family: LGPL
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
-    - LICENSE
+    - LICENSE.note
 
 extra:
   recipe-maintainers:
